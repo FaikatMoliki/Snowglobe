@@ -1,0 +1,250 @@
+<html>
+<head> </head>
+<style> 
+    #circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 65vh;
+        height: 65vh;
+        z-index:1;
+        transform: translate(-50%,-50%);
+        border-radius:50%;  
+        overflow: hidden;
+    }  
+     #trapezoid {
+        position: absolute;
+        top: 75%;
+        left: 30%;
+        width: 40%;
+        height: 20%;
+        background-color: black;
+        transform: rotateX(10deg); 
+        transform: perspective(2em) rotateX(10deg);
+    } 
+    
+    #rect {
+        position: absolute;
+        top: 70%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        z-index:2;
+        background-color: skyblue;
+        border-radius: 20px; 
+        animation: waterMovement 3s infinite;
+    }   
+     @keyframes waterMovement {
+        
+        from{transform: scaleY(1);}
+        50%{transform: scaleY(0.1);}
+        to{transform: scaleY(1);}
+    }
+    
+    
+    #oval1 {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        height: 50px;
+        width: 100px;
+        z-index:3;
+        background-color: hsl(192, 100%, 95%);
+        border-radius: 50%;
+        animation: mymove 20s infinite;
+        animation-timing-function: ease;
+        animation-delay: 1s;
+}
+     @keyframes mymove {
+            from {left: 0px;}
+            to {left: 300px;}
+}
+    #oval2 {
+        position: absolute;
+        top: 5%;
+        left: 68%;
+        height: 50px;
+        width: 100px;
+        z-index:4;
+        background-color: hsl(192, 100%, 95%);
+        border-radius: 50%;
+        animation: mymove2 20s infinite;
+        animation-timing-function: ease;
+        animation-delay: 1s;
+}
+     @keyframes mymove2 {
+            from {left: 300px;}
+            to {left: 0px;}
+}
+
+    #rect1 {
+        position: absolute;
+        top: 60%;
+        left: 0%;
+        width: 100%;
+        height: 10%;
+        background-color: hsl(120, 100%, 40%); 
+    }
+    
+    #star{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 5%;
+        height: 5%;
+        z-index:5;
+        background-color: yellow;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation: blinking 1s infinite;
+    }    
+    
+    @keyframes blinking {
+        from{opacity:0;}
+        to{opacity:1;}
+    }
+    #star1{
+        position: absolute;
+        top: 20%;
+        left: 70%;
+        width: 5%;
+        height: 5%;
+        background-color: yellow;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation: blinking 1s infinite;
+    }    
+    
+    @keyframes blinking {
+        from{opacity:0;}
+        to{opacity:1;}
+    }
+    #star2{
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        width: 5%;
+        height: 5%;
+        background-color: yellow;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation: blinking 1s infinite;
+    }    
+    
+    @keyframes blinking {
+        from{opacity:0;}
+        to{opacity:1;}
+    }
+    #star3{
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        width: 5%;
+        height: 5%;
+        background-color: yellow;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation: blinking 1s infinite;
+    }    
+    
+    @keyframes blinking {
+        from{opacity:0;}
+        to{opacity:1;}
+    }
+    #star4{
+        position: absolute;
+        top: 20%;
+        left: 90%;
+        width: 5%;
+        height: 5%;
+        background-color: yellow;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        animation: blinking 1s infinite;
+    }    
+    
+    @keyframes blinking {
+        from{opacity:0;}
+        to{opacity:1;}
+    }
+    
+    .accentColor{
+        background-color: hsla(0,0%,90%,0.8);
+        border: 2px solid gray;
+        background-image: rgb(240,240,240);
+    }
+    #circle1 {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 10%;
+        height: 10%;
+        border-radius:50%;  
+        background-color: white;
+    }  
+    #circle2 {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        width: 20%;
+        height: 20%;
+        border-radius:50%;  
+        background-color: white;
+    }  
+    #eyes1 {
+        position: absolute;
+        top: 35%;
+        left: 16%;
+        width: 1%;
+        height: 1%;
+        border-radius:50%;  
+        background-color: black;
+    }  
+    #eyes2 {
+        position: absolute;
+        top: 35%;
+        left: 11%;
+        width: 1%;
+        height: 1%;
+        border-radius:50%;  
+        background-color: black;
+    }  
+    #houseRect {
+        position: absolute;
+        top: 40%;
+        left: 55%;
+        width: 30%;
+        height: 20%;
+        background-color: burlywood;
+    } 
+    #houseHead {
+        position: absolute;
+        top: 20%;
+        left: 55%;
+        width: 30%;
+        height: 20%;
+        background-color: lightpink;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        
+    } 
+
+
+    
+</style>
+<body>
+    <div id="circle" class="accentColor"> 
+        <div id="rect"> </div>
+        <div id="oval1"> </div>
+        <div id="oval2"> </div>
+        <div id="rect1"></div>
+        <div id="star"></div>
+        <div id="star1"></div>
+        <div id="star2"></div>
+        <div id="star3"></div>
+        <div id="star4"></div>
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="eyes1"></div>
+        <div id="eyes2"></div>
+        <div id="houseRect"></div>
+        <div id="houseHead"></div>
+        
+    </div> 
+    <div id= "trapezoid"> </div>
+</body>
+</html>
